@@ -1,0 +1,114 @@
+﻿@using Model.EF;
+@using PagedList.Mvc;
+@model PagedList.PagedList<Model.EF.DienThoai>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/UserLayout.cshtml";
+}
+
+@*Hiển thị hãng sản xuất*@
+<style>
+    #divNavigation {
+        display: none;
+    }
+</style>
+<div id="sidebar" class="span3">
+    <div class="well well-small">
+        <ul class="nav nav-list">
+            <li style="border:0"> &nbsp;</li>
+            <li> <a style="color:blue;" href="cart.html"><strong>Danh mục điện thoại</strong></a></li>
+            @foreach (var item in (List<HangSanXuat>)ViewBag.lstHangSanXuat)
+            {
+                <li class="btn btn-success"><a href="@Url.Action("ShowPhoneType","PhoneCategory", new {@MaHSX=item.MaHSX })"><span class="fas fa-mobile-alt"></span><b>@item.TenHSX</b></a></li>
+            }
+        </ul>
+    </div>
+
+    <div class="well well-small alert alert-warning cntr">
+        <h2>50% Discount</h2>
+        <p>
+            only valid for online order. <br><br><a class="defaultBtn" href="#">Click here </a>
+        </p>
+    </div>
+    <div class="well well-small"><a href="#"><img src="assets/img/paypal.jpg" alt="payment method paypal"></a></div>
+
+    <a class="shopBtn btn-block" href="#">Upcoming products <br><small>Click to view</small></a>
+    <br>
+    <br>
+    <ul class="nav nav-list promowrapper">
+        <li>
+            <div class="thumbnail">
+                <a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+                <img src="assets/img/bootstrap-ecommerce-templates.png" alt="bootstrap ecommerce templates">
+                <div class="caption">
+                    <h4><a class="defaultBtn" href="product_details.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+                </div>
+            </div>
+        </li>
+        <li style="border:0"> &nbsp;</li>
+        <li>
+            <div class="thumbnail">
+                <a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+                <img src="assets/img/shopping-cart-template.png" alt="shopping cart template">
+                <div class="caption">
+                    <h4><a class="defaultBtn" href="product_details.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+                </div>
+            </div>
+        </li>
+        <li style="border:0"> &nbsp;</li>
+        <li>
+            <div class="thumbnail">
+                <a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+                <img src="assets/img/bootstrap-template.png" alt="bootstrap template">
+                <div class="caption">
+                    <h4><a class="defaultBtn" href="product_details.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+@{
+    <div class="span9">
+        <!--
+        New Products
+        -->
+        <div class="well well-small">
+            <h3 style="margin-left:2%;">Tất cả sản phẩm</h3>
+            <div class="row-fluid">
+                <ul class="thumbnails" style="margin:0">
+                    @foreach (var item in Model)
+                    {
+                        <li class="span4" style="margin-left:1%;">
+                            <div class="thumbnail">
+                                <a href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})" class="overlay"></a>
+                                <a class="zoomTool" href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})" title="add to cart"><span class="fas fa-search"></span> QUICK VIEW</a>
+                                <a href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})"><img style="width:200px;height:414px;" src="@Url.Content("~/Assets/Client/img/"+item.AnhBia)" alt=""></a>
+                                <div style="width:190px;height:120px;" class="caption cntr">
+                                    <p>@item.TenDT</p>
+                                    <p><strong>@item.GiaBan</strong></p>
+                                    <h4><a class="shopBtn" href="/them-gio-hang?productID=@item.MaDT&quantity=1" title="add to cart"> Add to cart </a></h4>
+                                </div>
+                            </div>
+                        </li>
+                    }
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    @*Tao link lien ket cac trang*@
+    <div style="margin-left:2%; margin-bottom:1%;">Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount</div>
+    <div class="MenuPage">
+        @Html.PagedListPager(Model, page => Url.Action("AllProduct", new { page = page }))
+    </div>
+    <style>
+        .MenuPage li {
+            display: inline;
+            margin-left: 2%;
+        }
+    </style>
+}

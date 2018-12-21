@@ -1,0 +1,18 @@
+﻿@using WebsiteSalePhones.Models;
+@model List<Model.EF.DienThoai>
+
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+        <li class="span3" style="width:180px;height:305px;">
+            <div class="thumbnail">
+                <a class="zoomTool" href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})" title="add to cart"><span class="fas fa-search"></span> QUICK VIEW</a>
+                <a href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})"><img style="width:180px;height:290px;" src="@Url.Content("~/Assets/Client/img/"+item.AnhBia)" alt="bootstrap-ring"></a>
+                <a style="float:left;margin-left:8%;margin-top:3%;" href="/them-gio-hang?productID=@item.MaDT&quantity=1" title="add to cart"><i class="fas fa-shopping-cart"></i></a>
+                <p style="margin-left:12%;margin-top:3%;"><strong>@item.GiaBan.GetValueOrDefault(0).ToString("N0") VND</strong></p>
+              
+            </div>
+        </li>
+    }
+}

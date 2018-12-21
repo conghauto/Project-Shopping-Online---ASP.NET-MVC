@@ -1,0 +1,41 @@
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\bin\Debug\Model.dll.config
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\bin\Debug\Model.dll
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\bin\Debug\Model.pdb
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\bin\Debug\EntityFramework.dll
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\bin\Debug\EntityFramework.xml
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\obj\Debug\Model.dll
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\obj\Debug\Model.pdb
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\bin\Debug\PagedList.dll
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\bin\Debug\PagedList.Mvc.dll
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\bin\Debug\PagedList.xml
+E:\Bài tập công nghệ Web\DA_CNWEB\WebsiteSalePhones\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\bin\Debug\Model.dll.config
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\bin\Debug\Model.dll
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\bin\Debug\Model.pdb
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\bin\Debug\EntityFramework.dll
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\bin\Debug\PagedList.dll
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\bin\Debug\EntityFramework.xml
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\bin\Debug\PagedList.xml
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\obj\Debug\Model.dll
+C:\Users\to cong hau\Desktop\WebsiteSalePhones\Model\obj\Debug\Model.pdb
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\bin\Debug\Model.dll.config
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\bin\Debug\Model.dll
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\bin\Debug\Model.pdb
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\bin\Debug\EntityFramework.dll
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\bin\Debug\PagedList.dll
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\bin\Debug\EntityFramework.xml
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\bin\Debug\PagedList.xml
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\obj\Debug\Model.dll
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Model\obj\Debug\Model.pdb

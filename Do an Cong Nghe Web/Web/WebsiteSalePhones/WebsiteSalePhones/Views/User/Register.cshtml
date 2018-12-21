@@ -1,0 +1,123 @@
+﻿@model WebsiteSalePhones.Models.RegisterModel
+@using BotDetect.Web.Mvc;
+
+@{ MvcSimpleCaptcha registerCaptcha = new MvcSimpleCaptcha("registerCaptcha"); }
+
+@{
+    ViewBag.Title = "Đăng ký";
+    Layout = "~/Views/Layout/UserLayout.cshtml";
+}
+
+
+@using (Html.BeginForm("Register","User",FormMethod.Post)) 
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Đăng kí thành viên</h4>
+        <hr />
+        <div class="form-group">
+            @Html.ValidationSummary(false, "", new { @class = "text-danger",style="color:red" })
+            @if (ViewBag.Success != null)
+            {
+                <div class="alert alert-success">@ViewBag.Success</div>
+            }
+        </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.TaiKhoan, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.TaiKhoan, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TaiKhoan, "", new { @class = "text-danger", style = "color:red" })
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(model => model.MatKhau, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;" })
+                <div class="col-md-10">
+                    @Html.PasswordFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger", style = "color:red" })
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(model => model.XacNhanMK, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;" })
+                <div class="col-md-10">
+                    @Html.PasswordFor(model => model.XacNhanMK, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.XacNhanMK, "", new { @class = "text-danger", style = "color:red" })
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(model => model.HoTen, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger", style = "color:red" })
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger", style = "color:red" })
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(model => model.DiaChi, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger", style = "color:red" })
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(model => model.DienThoai, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.DienThoai, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DienThoai, "", new { @class = "text-danger", style = "color:red" })
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(model => model.GioiTinh, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.GioiTinh, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "text-danger", style = "color:red" })
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(model => model.NgaySinh, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.NgaySinh, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger", style = "color:red" })
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10" style="margin-left:25%;">
+                    @Html.SimpleCaptcha(registerCaptcha)
+                    @Html.TextBox("CaptchaCode")
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <p style="margin-left:25%;"><input type="submit" value="Đăng ký" class="btn btn-default" /></p>
+                </div>
+            </div>
+        </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index","Home")
+</div>
+<style>
+    #sidebar{
+        display:none;
+    }
+    .our_client{
+        display:none;
+    }
+</style>

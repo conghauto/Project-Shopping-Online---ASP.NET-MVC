@@ -1,0 +1,68 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model IPagedList<Model.EF.DienThoai>
+
+@{
+    ViewBag.Title = "ResultSearch";
+    Layout = "~/Views/Layout/UserLayout.cshtml";
+}
+
+<h3>Kết quả tìm kiếm</h3>
+<hr />
+<div style="color:red;">@ViewBag.Notify</div>
+<hr />
+@if (Model != null)
+{
+<table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().MaDT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TenDT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().GiaBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().AnhBia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SoLuongTon)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenDT)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.GiaBan)*@
+                <p><strong>@item.GiaBan.GetValueOrDefault(0).ToString("N0") VND</strong></p>
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.AnhBia)*@
+                <a href="@Url.Action("ProductDetail", "Phone", new { @MaDT = item.MaDT })"><img style="width:30px;height:60px;" src="@Url.Content("~/Assets/Client/img/" + item.AnhBia)" alt="bootstrap-ring"></a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuongTon)
+            </td>
+        </tr>
+    }
+</table>
+}
+@*Tao link lien ket cac trang*@
+<div style="margin-left:2%; margin-bottom:1%;">Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount</div>
+<div class="MenuPage">
+    @Html.PagedListPager(Model, page => Url.Action("ResultSearch", new { page = page,@sTuKhoa=ViewBag.Keyword }))
+</div>
+<style>
+    .MenuPage li {
+        display: inline;
+        margin-left: 2%;
+    }
+</style>

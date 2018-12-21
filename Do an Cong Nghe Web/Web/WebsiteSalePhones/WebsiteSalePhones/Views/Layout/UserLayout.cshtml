@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!-- bootstrap style s-->
+    <link href="~/Content/UserCssLayout/bootstrap.css" rel="stylesheet" />
+    <!-- font awesome styles -->
+    <link href="~/Content/UserCssLayout/font-awesome.css" rel="stylesheet" />
+    <!-- Customize styles -->
+    <link href="~/Content/UserCssLayout/style.css" rel="stylesheet" />
+    <link href="~/Content/UserCssLayout/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="~/Content/UserCssLayout/jquery-ui.css" rel="stylesheet" />
+    @*<link href="~/Content/UserCssLayout/font-awesome-ie7.min.css" rel="stylesheet" />*@
+    <!-- Insert Css Design-->
+    <link href="~/Content/UserCssLayout/UserCssLayout.css" rel="stylesheet" />
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/Assets/Client/js/jquery.js"></script>
+    <script src="~/Assets/Client/js/jquery-1.11.3.min.js"></script>
+    <script src="~/Assets/Client/js/jquery-ui.js"></script>
+    <script src="~/Assets/Client/js/bootstrap.js"></script>
+
+
+    <script src="~/Assets/Client//js/bootstrap.min.js"></script>
+    <script src="~/Assets/Client/js/jquery.easing-1.3.min.js"></script>
+    <script src="~/Assets/Client/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script src="~/Assets/Client/js/shop.js"></script>
+</head>
+<body>
+    <!--
+        Upper Header Section
+    -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="topNav">
+            <div class="container">
+                <div class="alignR">
+                    <div class="pull-left socialNw">
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                        <a href="#"><span class="fab fa-tumblr"></span></a>
+                    </div>
+                    <a class="active" href="/Home/Index/"> <span class="fas fa-home"></span> Trang chủ</a>
+                    <a href="#"><span class="fas fa-user"></span> My Account</a>
+                    <a href="@Url.Action("Register","User")"><span class="fas fa-edit"></span>Đăng kí</a>
+                    <a href="contact.html"><span class="fas fa-envelope"></span> Liên hệ</a>
+                    <a href="/Cart/Index"><span class="fas fa-shopping-cart"></span>Giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    Lower Header Section
+    -->
+    <div class="container">
+        <div id="gototop"> </div>
+        <header id="header">
+            <div class="row">
+                <div class="span4">
+                    <h1>
+                        <a class="logo" href="/" hreflang="nofollow">
+                            <span>Twitter Bootstrap ecommerce template</span>
+                            <img src="~/Assets/Client/img/logo.png" alt="bootstrap sexy shop">
+                        </a>
+                    </h1>
+                </div>
+               @{ Html.RenderAction("HeaderCart", "Home");}
+            </div>
+        </header>
+
+        <!--
+        Navigation Bar Section
+        -->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
+                            <li class=""><a href="@Url.Action("AllProduct","Phone")">Điện thoại</a></li>
+                            <li class=""><a href="grid-view.html">Giới thiệu</a></li>
+                        </ul>
+            
+                        <form action="/Phone/ResultSearch" method="post" class="navbar-search" style="margin-left:330px;">
+                            <input type="text" id="txtKeyword" name="txtKeyword" placeholder="Search" class="search-query span2"><button style="height:30px;"type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        Body Section
+        -->
+        <div class="row">
+            <div id="divNavigation">
+                @Html.Action("Navigation", "PhoneCategory")
+            </div>
+            <div class="span9">
+                @RenderBody()
+            </div>
+        </div>
+
+        <!--
+        Footer
+        -->
+        <footer class="footer">
+            <div class="row-fluid">
+                <div class="span2">
+                    <h5>Your Account</h5>
+                    <a href="#">YOUR ACCOUNT</a><br>
+                    <a href="#">PERSONAL INFORMATION</a><br>
+                    <a href="#">ADDRESSES</a><br>
+                    <a href="#">DISCOUNT</a><br>
+                    <a href="#">ORDER HISTORY</a><br>
+                </div>
+                <div class="span2">
+                    <h5>Iinformation</h5>
+                    <a href="contact.html">CONTACT</a><br>
+                    <a href="#">SITEMAP</a><br>
+                    <a href="#">LEGAL NOTICE</a><br>
+                    <a href="#">TERMS AND CONDITIONS</a><br>
+                    <a href="#">ABOUT US</a><br>
+                </div>
+                <div class="span2">
+                    <h5>Our Offer</h5>
+                    <a href="#">NEW PRODUCTS</a> <br>
+                    <a href="#">TOP SELLERS</a><br>
+                    <a href="#">SPECIALS</a><br>
+                    <a href="#">MANUFACTURERS</a><br>
+                    <a href="#">SUPPLIERS</a> <br />
+                </div>
+                <div class="span6">
+                    <h5>The standard chunk of Lorem</h5>
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
+                    those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                    Malorum" by Cicero are also reproduced in their exact original form,
+                    accompanied by English versions from the 1914 translation by H. Rackham.
+                </div>
+            </div>
+        </footer>
+    </div><!-- /container -->
+
+    <div class="copyright">
+        <div class="container">
+            <span>Copyright &copy; 2013</span>
+        </div>
+    </div>
+    <a href="#" class="gotop"><i class="fas fa-angle-double-up"></i></a>
+   
+ 
+    <script src="~/Assets/Client/js/controller/baseController.js"></script>
+    @RenderSection("jsFooter", required: false)
+</body>
+</html>

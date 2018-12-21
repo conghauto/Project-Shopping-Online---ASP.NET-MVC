@@ -1,0 +1,112 @@
+﻿@model Model.EF.DienThoai
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    <h3 style="margin-left:12px;">Cập nhật sản phẩm</h3>
+}
+@section jsFooter{
+    <script>
+        $('#btnSelectImage').on('click', function (e) {
+            e.preventDefault();
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (url) {
+                $('#txtImage').val(url);
+            }
+            finder.popup();
+        })
+        var editor1 = CKEDITOR.replace('txtInfo', {
+            customConfig: 'config.js',
+        });
+        var editor2 = CKEDITOR.replace('txtDetail', {
+            customConfig: 'config.js',
+        });
+    </script>
+}
+<div id="content-wrapper">
+
+    <div class="container-fluid">
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+            <div class="card-header">
+               Thông tin
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    @using (Html.BeginForm("Edit", "Phones", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                <b>@Html.LabelFor(model => model.TenDT, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.TextBoxFor(model => model.TenDT, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.TenDT, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group">
+                                <b>@Html.LabelFor(model => model.GiaBan, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.TextBoxFor(model => model.GiaBan, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.GiaBan, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group">
+                                <b>@Html.LabelFor(model => model.GioiThieu, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                <div class="col-md-10">
+                                    @Html.TextAreaFor(model => model.GioiThieu, new { htmlAttributes = new { @class = "form-control" }, id = "txtInfo" })
+                                    @Html.ValidationMessageFor(model => model.GioiThieu, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <b>@Html.LabelFor(model => model.MoTaChiTiet, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                <div class="col-md-10">
+                                    @Html.TextAreaFor(model => model.MoTaChiTiet, new { htmlAttributes = new { @class = "form-control" }, id = "txtDetail" })
+                                    @Html.ValidationMessageFor(model => model.MoTaChiTiet, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <b>@Html.LabelFor(model => model.AnhBia, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.TextBoxFor(model => model.AnhBia, new { htmlAttributes = new { @class = "form-control" }, id = "txtImage" })
+                                <button class="btn btn-info" id="btnSelectImage">Chọn ảnh</button>
+                                @Html.ValidationMessageFor(model => model.AnhBia, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group">
+                                <b>@Html.LabelFor(model => model.NgayCapNhat, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.TextBoxFor(model => model.NgayCapNhat, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.NgayCapNhat, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group">
+                                <b>@Html.LabelFor(model => model.SoLuongTon, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.TextBoxFor(model => model.SoLuongTon, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.SoLuongTon, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <b>@Html.LabelFor(model => model.MaHSX, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.DropDownListFor(model => model.MaHSX, null, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.MaHSX, "", new { @class = "text-danger" })
+
+                            </div>
+                            <div class="form-group">
+                                <b>@Html.LabelFor(model => model.Moi, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.CheckBoxFor(model => model.Moi, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Moi, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group" style="margin-left:15%">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Update" class="btn btn-default" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

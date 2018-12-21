@@ -1,0 +1,81 @@
+﻿@model Model.EF.Admin
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    <h3 style="margin-left:12px;">Thêm Admin quản trị</h3>
+}
+
+<div id="content-wrapper">
+
+    <div class="container-fluid">
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+            <div class="card-header">
+                Nhập thông tin người dùng
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    @using (Html.BeginForm("Create", "Admin", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group" style="font-size:0.9em">
+                                <b>@Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.TextBoxFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                            <div class="form-group" style="font-size:0.9em">
+                                <b>@Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.PasswordFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group" style="font-size:0.9em">
+                                <b>@Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.TextBoxFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group" style="font-size:0.9em">
+                                <b>@Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.TextBoxFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group" style="font-size:0.9em">
+                                <b>@Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.TextBoxFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group" style="font-size:0.9em">
+                                <b>@Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.TextBoxFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group" style="font-size:0.9em">
+                                <b>@Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })</b>
+                                @Html.CheckBoxFor(model => model.Status, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group" style="margin-left:15%">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Create" class="btn btn-default" />
+                                </div>
+                            </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@model List<WebsiteSalePhones.Models.CartItem>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/UserLayout.cshtml";
+}
+@section jsFooter{
+<script src="/Assets/Client/js/controller/cartController.js"></script>
+}
+@if (Model.Count > 0)
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td><b>ID</b></td>
+                <td><b>Tên SP</b></td>
+                <td><b>Image</b></td>
+                <td><b>Số lượng</b></td>
+                <td><b>Đơn giá</b></td>
+                <td><b>Thành tiền</b></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.DienThoai.MaDT</td>
+                    <td>@item.DienThoai.TenDT</td>
+                    <td><a href="@Url.Action("ProductDetail", "Phone", new { @MaDT = item.DienThoai.MaDT })"><img src="@Url.Content("~/Assets/Client/img/"+item.DienThoai.AnhBia)" style="width:20px;height:50px;" /></a></td>
+                    <td><input type="text" class="txtQuantity" data-id="@item.DienThoai.MaDT" value="@item.Quantity" /></td>
+                    <td>@item.DienThoai.GiaBan.GetValueOrDefault(0).ToString("N0")</td>
+                    <td>@((item.DienThoai.GiaBan.GetValueOrDefault(0) * item.Quantity).ToString("N0"))</td>
+                    <td><a href="#" data-id="@item.DienThoai.MaDT" class="btn-delete"><i class="fas fa-trash-alt"></i></a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button id="btnContinue" class="btn">Tiếp tục mua hàng</button>
+    <button id="btnUpdate" class="btn">Cập nhật giỏ hàng</button>
+    <button id="btnDeleteAll" class="btn">Xoá giỏ hàng</button>
+    <button id="btnPayment" class="btn">Thanh toán</button>
+}
+else
+{
+    <div class="alert alert-warning">Chưa có sản phẩm nào trong giỏ hàng.</div>
+}
+
+

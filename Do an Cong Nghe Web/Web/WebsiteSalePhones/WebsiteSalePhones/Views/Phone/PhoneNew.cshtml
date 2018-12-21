@@ -1,0 +1,17 @@
+﻿@using WebsiteSalePhones.Models;
+@model List<Model.EF.DienThoai>
+
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+        <li class="span3" style="width:180px;height:305px;">
+            <div class="thumbnail">
+                <a class="zoomTool" href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})" title="add to cart"><span class="fas fa-search"></span> QUICK VIEW</a>
+                <a href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})" class="tag"><img src="~/Assets/Client/img/new.png" /></a>
+                <a href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})"><img style="width:180px;height:305px;"src="@Url.Content("~/Assets/Client/img/"+item.AnhBia)" alt="bootstrap-ring"></a>
+                <center style="margin-top:5px;font-weight:bold;">@item.TenDT</center>
+            </div>
+        </li>
+    }
+}
