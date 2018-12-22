@@ -12,8 +12,7 @@
 <div id="sidebar" class="span3">
     <div class="well well-small">
         <ul class="nav nav-list">
-            <li style="border:0"> &nbsp;</li>
-            <li> <a style="color:blue;" href="cart.html"><strong>Danh mục điện thoại</strong></a></li>
+            <li> <a style="color:blue;margin-bottom:10%;" href="cart.html"><strong>Danh mục điện thoại</strong></a></li>
             @foreach (var item in Model)
             {
                 <li class="btn btn-success"><a href="@Url.Action("ShowPhoneType","PhoneCategory", new {@MaHSX=item.MaHSX })"><span class="fas fa-mobile-alt" style="margin-right:10px;"></span><b>@item.TenHSX</b></a></li>

@@ -7,8 +7,6 @@ using PagedList;
 using PagedList.Mvc;
 using Model.EF;
 using Model.DAO;
-using PagedList.Mvc;
-using PagedList;
 
 namespace WebsiteSalePhones.Controllers
 {

@@ -34,6 +34,7 @@ namespace WebsiteSalePhones.Controllers
                 return null;
             }
 
+            ViewBag.HangSanXuat = nxb.TenHSX;
             //Hiển thị sách theo Nhà xuất bản
             List<DienThoai> lstPhone = db.DienThoais.Where(n => n.MaHSX == MaHSX).ToList();
             if (lstPhone.Count == 0)
@@ -42,7 +43,8 @@ namespace WebsiteSalePhones.Controllers
             }
             //Gán danh sách nhà xuất bản
             ViewBag.lstHangSanXuat = db.HangSanXuats.ToList();
-            return View(db.DienThoais.OrderBy(n => n.GiaBan).ToPagedList(1,6));
+     
+            return View(lstPhone.OrderBy(n => n.GiaBan).ToPagedList(1, 6));
         }
     }
 }

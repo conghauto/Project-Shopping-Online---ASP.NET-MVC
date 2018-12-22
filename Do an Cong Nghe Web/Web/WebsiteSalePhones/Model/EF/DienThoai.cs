@@ -26,7 +26,7 @@
         [Display(Name = "Giới thiệu")]
         [AllowHtml]
         public string GioiThieu { get; set; }
-        
+
         [Display(Name = "Mô tả chi tiết")]
         [AllowHtml]
         public string MoTaChiTiet { get; set; }

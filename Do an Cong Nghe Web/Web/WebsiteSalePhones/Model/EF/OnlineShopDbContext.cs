@@ -43,6 +43,10 @@ namespace Model.EF
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<DonHang>()
+                .Property(e => e.SoDT)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<DonHang>()
                 .HasMany(e => e.ChiTietDonHangs)
                 .WithRequired(e => e.DonHang)
                 .WillCascadeOnDelete(false);

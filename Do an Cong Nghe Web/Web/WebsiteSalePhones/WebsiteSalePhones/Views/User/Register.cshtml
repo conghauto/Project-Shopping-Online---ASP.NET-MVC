@@ -1,28 +1,25 @@
 ﻿@model WebsiteSalePhones.Models.RegisterModel
-@using BotDetect.Web.Mvc;
-
-@{ MvcSimpleCaptcha registerCaptcha = new MvcSimpleCaptcha("registerCaptcha"); }
 
 @{
     ViewBag.Title = "Đăng ký";
     Layout = "~/Views/Layout/UserLayout.cshtml";
 }
 
+<div class="content">
+    @using (Html.BeginForm("Register", "User", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
 
-@using (Html.BeginForm("Register","User",FormMethod.Post)) 
-{
-    @Html.AntiForgeryToken()
-
-    <div class="form-horizontal">
-        <h4>Đăng kí thành viên</h4>
-        <hr />
-        <div class="form-group">
-            @Html.ValidationSummary(false, "", new { @class = "text-danger",style="color:red" })
-            @if (ViewBag.Success != null)
-            {
-                <div class="alert alert-success">@ViewBag.Success</div>
-            }
-        </div>
+        <div class="form-horizontal">
+            <h4>Đăng kí thành viên</h4>
+            <hr />
+            <div class="form-group">
+                @Html.ValidationSummary(false, "", new { @class = "text-danger", style = "color:red" })
+                @if (ViewBag.Success != null)
+                {
+                    <div class="alert alert-success">@ViewBag.Success</div>
+                }
+            </div>
             <div class="form-group">
                 @Html.LabelFor(model => model.TaiKhoan, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;" })
                 <div class="col-md-10">
@@ -82,7 +79,14 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.GioiTinh, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;" })
                 <div class="col-md-10">
-                    @Html.TextBoxFor(model => model.GioiTinh, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.DropDownListFor(model => model.GioiTinh, new SelectList(
+                  new List<Object>{
+                       new { value = 0 , text = "Nam"  },
+                       new { value = 1 , text = "Nữ" },
+                    },
+                  "value",
+                  "text",
+                   2), new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "text-danger", style = "color:red" })
                 </div>
             </div>
@@ -96,28 +100,35 @@
             </div>
             <br />
             <div class="form-group">
-                <div class="col-md-offset-2 col-md-10" style="margin-left:25%;">
-                    @Html.SimpleCaptcha(registerCaptcha)
-                    @Html.TextBox("CaptchaCode")
-                </div>
-            </div>
-            <br />
-            <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <p style="margin-left:25%;"><input type="submit" value="Đăng ký" class="btn btn-default" /></p>
+                    <p style="margin-left:25%;"><input type="submit" value="Đăng ký" class="btn btn-success" /></p>
                 </div>
             </div>
         </div>
-}
-
-<div>
-    @Html.ActionLink("Back to List", "Index","Home")
-</div>
-<style>
-    #sidebar{
-        display:none;
     }
-    .our_client{
-        display:none;
+</div>
+<div>
+    @Html.ActionLink("Back to List", "Index", "Home")
+</div>
+
+<link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+@section Scripts {
+
+
+    <script src="~/Scripts/jquery-1.12.4.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#NgaySinh').datepicker();
+        });
+    </script>
+}
+<style>
+    #sidebar {
+        display: none;
+    }
+
+    .our_client {
+        display: none;
     }
 </style>

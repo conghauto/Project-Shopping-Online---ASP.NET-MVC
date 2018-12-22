@@ -8,9 +8,12 @@ namespace WebsiteSalePhones.Models
 {
     public class LoginModel
     {
-        [Required(ErrorMessage ="Nhập tên đăng nhập.")]
+        [Key]
+        [Display(Name ="Tên đăng nhập")]
+        [Required(ErrorMessage ="Bạn phải nhập tên đăng nhập.")]
         public string TaiKhoan { set; get; }
-        [Required(ErrorMessage = "Nhập mật khẩu.")]
+        [Display(Name = "Mật khẩu")]
+        [Required(ErrorMessage = "Bạn phải nhập mật khẩu.")]
         public string MatKhau { set; get; }
         public bool Remember { set; get; }
     }

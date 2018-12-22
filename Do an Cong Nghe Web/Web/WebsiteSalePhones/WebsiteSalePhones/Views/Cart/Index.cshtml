@@ -1,6 +1,6 @@
 ﻿@model List<WebsiteSalePhones.Models.CartItem>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Giỏ hàng";
     Layout = "~/Views/Layout/UserLayout.cshtml";
 }
 @section jsFooter{
@@ -27,7 +27,7 @@
                     <td>@item.DienThoai.MaDT</td>
                     <td>@item.DienThoai.TenDT</td>
                     <td><a href="@Url.Action("ProductDetail", "Phone", new { @MaDT = item.DienThoai.MaDT })"><img src="@Url.Content("~/Assets/Client/img/"+item.DienThoai.AnhBia)" style="width:20px;height:50px;" /></a></td>
-                    <td><input type="text" class="txtQuantity" data-id="@item.DienThoai.MaDT" value="@item.Quantity" /></td>
+                    <td><input type="number" class="txtQuantity" data-id="@item.DienThoai.MaDT" value="@item.Quantity" /></td>
                     <td>@item.DienThoai.GiaBan.GetValueOrDefault(0).ToString("N0")</td>
                     <td>@((item.DienThoai.GiaBan.GetValueOrDefault(0) * item.Quantity).ToString("N0"))</td>
                     <td><a href="#" data-id="@item.DienThoai.MaDT" class="btn-delete"><i class="fas fa-trash-alt"></i></a></td>
@@ -35,10 +35,10 @@
             }
         </tbody>
     </table>
-    <button id="btnContinue" class="btn">Tiếp tục mua hàng</button>
-    <button id="btnUpdate" class="btn">Cập nhật giỏ hàng</button>
-    <button id="btnDeleteAll" class="btn">Xoá giỏ hàng</button>
-    <button id="btnPayment" class="btn">Thanh toán</button>
+    <button id="btnContinue" class="btn btn-info">Tiếp tục mua hàng</button>
+    <button id="btnUpdate" class="btn btn-warning">Cập nhật giỏ hàng</button>
+    <button id="btnDeleteAll" class="btn btn-danger">Xoá giỏ hàng</button>
+    <button id="btnPayment" class="btn btn-success">Thanh toán</button>
 }
 else
 {

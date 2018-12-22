@@ -21,10 +21,10 @@
                         <div class="thumbnail">
                             <a href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})" class="overlay"></a>
                             <a class="zoomTool" href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})" title="add to cart"><span class="fas fa-search"></span> QUICK VIEW</a>
-                            <a href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})"><img style="width:200px;height:414px;" src="@Url.Content("~/Assets/Client/img/"+item.AnhBia)" alt=""></a>
+                            <a href="@Url.Action("ProductDetail","Phone",new {@MaDT=item.MaDT})"><img style="width:180px;height:320px;" src="@Url.Content("~/Assets/Client/img/"+item.AnhBia)" alt=""></a>
                             <div style="width:190px;height:120px;" class="caption cntr">
                                 <p>@item.TenDT</p>
-                                <p><strong>@item.GiaBan</strong></p>
+                                <p><strong>@item.GiaBan.GetValueOrDefault(0).ToString("N0")</strong></p>
                                 <h4><a class="shopBtn" href="/them-gio-hang?productID=@item.MaDT&quantity=1" title="add to cart"> Add to cart </a></h4>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using WebsiteSalePhones.Common;
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -44,9 +45,22 @@
                         <a href="#"><span class="fab fa-tumblr"></span></a>
                     </div>
                     <a class="active" href="/Home/Index/"> <span class="fas fa-home"></span> Trang chủ</a>
-                    <a href="#"><span class="fas fa-user"></span> My Account</a>
-                    <a href="@Url.Action("Register","User")"><span class="fas fa-edit"></span>Đăng kí</a>
+                    @{ 
+                        var session =(UserLogin) Session[WebsiteSalePhones.Common.CommonConstant.USER_SESSION];
+                    }
+                    @if (session == null)
+                    {
+                        <a href="/User/Login"><span class="fas fa-user"></span>Đăng nhập</a>
+                        <a href="@Url.Action("Register","User")"><span class="fas fa-edit"></span>Đăng kí</a>
+                    }
+                    else
+                    {
+                        <a href="#"><span class="fas fa-user"></span> Xin chào: @session.UserName</a>
+                        <a href="/User/Logout"><span class="fas fa-sign-out-alt"></span>Đăng xuất</a>
+                    }
+
                     <a href="contact.html"><span class="fas fa-envelope"></span> Liên hệ</a>
+
                     <a href="/Cart/Index"><span class="fas fa-shopping-cart"></span>Giỏ hàng</a>
                 </div>
             </div>
@@ -158,5 +172,6 @@
  
     <script src="~/Assets/Client/js/controller/baseController.js"></script>
     @RenderSection("jsFooter", required: false)
+    @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -1,8 +1,63 @@
-﻿
+﻿@model WebsiteSalePhones.Models.LoginModel
+
 @{
     ViewBag.Title = "Login";
     Layout = "~/Views/Layout/UserLayout.cshtml";
 }
 
-<h2>Login</h2>
+<div class="content">
+    @using (Html.BeginForm())
+    {
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4 style="color:blue;margin-left:25%;">Đăng nhập tài khoản</h4>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger", style = "color:red" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.TaiKhoan, htmlAttributes: new { @class = "control-label col-md-2",
+           style = "margin-right:2%;" })
+            <div class="col-md-push-6">
+                @Html.TextBoxFor(model => model.TaiKhoan, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TaiKhoan, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MatKhau, htmlAttributes: new { @class = "control-label col-md-2" , style = "margin-right:2%;" })
+            <div class="col-md-push-6">
+                @Html.PasswordFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Remember, htmlAttributes: new { @class = "control-label col-md-2", style = "margin-right:2%;margin-top:-1%;" })
+            <div class="col-md-push-6">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.Remember, new { htmlAttributes = new { @class = "form-control", style = "margin-left:1%;" } })
+                   
+                    @Html.ValidationMessageFor(model => model.Remember, "", new { @class = "text-danger" })
+                    <a style="color:forestgreen;margin-left:3%;" href="/User/Register"><i>Đăng kí tài khoản</i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input style="margin-top:2%;" type="submit" value="Đăng nhập" class="btn btn-info" />
+                
+            </div>
+        </div>
+    </div>
+    }
+</div>
+<style>
+    #sidebar {
+        display: none;
+    }
+
+    .our_client {
+        display: none;
+    }
+</style>
 

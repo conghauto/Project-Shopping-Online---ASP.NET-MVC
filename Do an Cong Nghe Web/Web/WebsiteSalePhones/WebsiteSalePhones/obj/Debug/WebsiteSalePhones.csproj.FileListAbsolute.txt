@@ -109,6 +109,7 @@ C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Websi
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Antlr3.Runtime.dll
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\BotDetect.dll
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\BotDetect.Web.Mvc.dll
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Common.dll
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\EntityFramework.dll
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\EntityFramework.SqlServer.dll
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.Agent.Intercept.dll
@@ -146,6 +147,7 @@ C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Syste
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.dll
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.Razor.dll
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\WebGrease.dll
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Common.pdb
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Model.pdb
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.ServerTelemetryChannel.xml

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebsiteSalePhones.Common;
 using WebsiteSalePhones.Models;
 
 namespace WebsiteSalePhones.Controllers
@@ -19,9 +20,59 @@ namespace WebsiteSalePhones.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+        public ActionResult Logout()
+        {
+            Session[CommonConstant.USER_SESSION] = null;
+            return Redirect("/");
+        }
         [HttpPost]
-        [SimpleCaptchaValidation("CaptchaCode", "registerCaptcha", "Mã xác nhận không đúng!")]
-        public ActionResult Register(RegisterModel model)
+        public ActionResult Login(LoginModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var dao = new UserDao();
+                var result = dao.Login(model.TaiKhoan, Encryptor.MD5Hash(model.MatKhau));
+                if (result == 1)
+                {
+                    //Gán Session
+                    var user = dao.GetByID(model.TaiKhoan);
+                    var userSession = new UserLogin();
+                    userSession.UserName = user.TaiKhoan;
+                    userSession.UserID = user.MaKH;
+
+                    Session.Add(CommonConstant.USER_SESSION, userSession);
+                    return RedirectToAction("Index", "Home");
+                }
+                else if (result == 0)
+                {
+                    ModelState.AddModelError("", "Tài khoản không tồn tại.");
+                }
+                else if (result == -1)
+                {
+                    ModelState.AddModelError("", "Tài khoản bị khóa.");
+                }
+                else if (result == -2)
+                {
+                    ModelState.AddModelError("", "Mật khẩu không đúng.");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Đăng nhập không đúng.");
+                }
+            }
+            else
+            {
+
+            }
+            return View(model);
+        }
+        [HttpPost]
+    public ActionResult Register(RegisterModel model)
         {
             if (ModelState.IsValid)
             {
@@ -37,8 +88,8 @@ namespace WebsiteSalePhones.Controllers
                 {
                     var kh = new KhachHang();
                     kh.TaiKhoan = model.TaiKhoan;
-                    kh.MatKhau = model.MatKhau;
-                    kh.XacNhanMK = model.XacNhanMK;
+                    kh.MatKhau = Encryptor.MD5Hash(model.MatKhau);
+                    kh.XacNhanMK = Encryptor.MD5Hash(model.XacNhanMK);
                     kh.HoTen = model.HoTen;
                     kh.Email = model.Email;
                     kh.DiaChi = model.DiaChi;

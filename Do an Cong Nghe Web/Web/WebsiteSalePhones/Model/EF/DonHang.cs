@@ -29,6 +29,18 @@ namespace Model.EF
 
         public int? MaKH { get; set; }
 
+        [StringLength(100)]
+        public string NguoiNhan { get; set; }
+
+        [StringLength(100)]
+        public string Email { get; set; }
+
+        [StringLength(12)]
+        public string SoDT { get; set; }
+
+        [StringLength(100)]
+        public string DiaChi { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
 

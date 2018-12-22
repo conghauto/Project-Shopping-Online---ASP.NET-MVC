@@ -1,0 +1,5 @@
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Common\bin\Debug\Common.dll
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Common\bin\Debug\Common.pdb
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Common\obj\Debug\Common.dll
+C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\Common\obj\Debug\Common.pdb
