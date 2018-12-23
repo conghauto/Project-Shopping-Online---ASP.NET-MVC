@@ -24,15 +24,15 @@ namespace WebsiteSalePhones.Models
         [Required(ErrorMessage = "Yêu cầu nhập họ tên.")]
         public string HoTen { get; set; }
 
-        [Display(Name = "Email")]
-        [Required(ErrorMessage = "Yêu cầu nhập email.")]
-        [RegularExpression((@"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"), ErrorMessage = "{0} không hợp lệ")]
+        //[Display(Name = "Email")]
+        //[Required(ErrorMessage = "Yêu cầu nhập email.")]
+        //[RegularExpression((@"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"), ErrorMessage = "{0} không hợp lệ")]
 
-        public string Email{ get; set; }
-        [Display(Name = "Địa chỉ")]
-        public string DiaChi{ get; set; }
-        [Display(Name = "Điện thoại")]
-        public string DienThoai { get; set; }
+        //public string Email{ get; set; }
+        //[Display(Name = "Địa chỉ")]
+        //public string DiaChi{ get; set; }
+        //[Display(Name = "Điện thoại")]
+        //public string DienThoai { get; set; }
         [Display(Name = "Giới tính")]
         public string GioiTinh{ get; set; }
         [Display(Name = "Ngày sinh")]

@@ -1,0 +1,104 @@
+﻿@model PagedList.IPagedList<Model.EF.DonHang>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Quản lí hóa đơn";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section header{}
+@section jsSession{
+    <script>
+    $('.myActionLink').prepend("<i class='fas fa-trash-alt'></i>");
+    </script>
+}
+
+<div id="content-wrapper">
+    <div class="container-fluid">
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/Admin/Home/Index">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item active">Quản lí hóa đơn</li>
+        </ol>
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fas fa-table"></i>
+                Danh sách hóa đơn
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm("Index", "Bill", FormMethod.Get, new { @class = "d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0" }))
+                {
+                    <div class="input-group" style="margin-bottom:10px;">
+                        <input type="text" class="form-control" aria-label="Search" aria-describedby="basic-addon2" vale="@ViewBag.SearchString" name="searchString">
+                        <div class="input-group-append">
+                            <button class="btn btn-info" type="submit">
+                                Tìm kiếm
+                            </button>
+                        </div>
+                    </div>
+                }
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Người nhận</th>
+                                <th>Ngày đặt</th>
+                                <th>Email</th>
+                                <th>Số DT</th>
+                                <th>Địa chỉ</th>
+                                <th>############</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr id="row_@item.MaDH">
+
+                                    <td>@item.MaDH</td>
+                                    <td>@item.NguoiNhan</td>
+                                    <td>@item.NgayDat</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.SoDT</td>
+                                    <td>@item.DiaChi</td>
+                                    <td>
+                                        <a href="@Url.Action("BillDetail","BillDetail", new {@MaDH=item.MaDH })">Chi tiết</a>
+                                        |
+                                        <a href="/Admin/Bill/Edit/@item.MaDH"><i class="fas fa-edit"></i></a>
+                                        |
+                                        @Ajax.ActionLink("|", "Delete","Bill",new { @id = item.MaDH }, new AjaxOptions
+                                   {
+                                       Confirm = "Bạn có muốn xóa bản ghi này?",
+                                       OnComplete = "$('#row_" + @item.MaDH + "').remove()",
+                                       HttpMethod = "Delete"
+                                   }, new { @class = "myActionLink" })
+                                    </td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <br />
+                    <div class="MenuPage">
+                        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @searchString = ViewBag.SearchString }))
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+    <!-- Sticky Footer -->
+    <footer class="sticky-footer">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright © Your Website 2018</span>
+            </div>
+        </div>
+    </footer>
+</div>
+<style>
+    .MenuPage li {
+        margin-left: 1%;
+    }
+</style>

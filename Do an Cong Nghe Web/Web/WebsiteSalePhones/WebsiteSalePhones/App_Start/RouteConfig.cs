@@ -34,7 +34,7 @@ namespace WebsiteSalePhones
                namespaces: new[] { "WebsiteSalePhones.Controllers" }
            );
             routes.MapRoute(
-            name: "Payment Sucess",
+            name: "Payment Success",
             url: "hoan-thanh",
             defaults: new { controller = "Cart", action = "Sucess", id = UrlParameter.Optional },
              namespaces: new[] { "WebsiteSalePhones.Controllers" }

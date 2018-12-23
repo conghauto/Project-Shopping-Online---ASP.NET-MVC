@@ -40,6 +40,11 @@ namespace WebsiteSalePhones.Areas.Admin.Controllers
             }
             return View("Index");
         }
+        public ActionResult Logout()
+        {
+            Session[CommonConstant.ADMIN_SESSION] = null;
+            return Redirect("/Login/Index");
+        }
         [HttpGet]
         public ActionResult Edit(int id)
         {

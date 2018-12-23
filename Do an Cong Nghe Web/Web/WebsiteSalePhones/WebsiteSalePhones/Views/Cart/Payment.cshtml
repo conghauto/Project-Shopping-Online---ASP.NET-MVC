@@ -1,9 +1,11 @@
 ﻿@model List<WebsiteSalePhones.Models.CartItem>
+@using WebsiteSalePhones.Common;
 @{
     ViewBag.Title = "Thanh toán";
     Layout = "~/Views/Layout/UserLayout.cshtml";
 }
 <div>
+
     @if (Model.Count > 0)
     {
         <table class="table table-bordered">

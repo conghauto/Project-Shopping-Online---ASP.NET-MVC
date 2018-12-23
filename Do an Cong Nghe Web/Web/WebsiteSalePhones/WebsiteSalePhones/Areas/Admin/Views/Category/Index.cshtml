@@ -1,0 +1,98 @@
+﻿@model PagedList.IPagedList<Model.EF.HangSanXuat>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Nhà cung cấp";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{}
+@section jsFooter{
+    <script src="~/Assets/Admin/js/controller/adminController.js"></script>
+    <script>
+        $('.myActionLink').prepend("<i class='fas fa-trash-alt'></i>");
+    </script>
+}
+
+<div id="content-wrapper">
+
+    <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/Admin/Home/Index">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item active">Nhà cung cấp</li>
+        </ol>
+
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fas fa-table"></i>
+                Danh sách cung ứng
+                <a class="btn btn-success" style="float:right;" href="/Admin/Category/Create">
+                    Thêm mới
+                </a>
+            </div>
+            <div class="card-body">
+               
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên hãng sản xuất</th>
+                                <th>Liên hệ</th>
+                                <th>Trạng thái</th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr id="row_@item.MaHSX">
+                                    <td>@item.MaHSX</td>
+                                    <td>@item.TenHSX</td>
+                                    <td>@item.LienHe</td>
+                                    <td>@item.TrangThai</td>
+                                    <td>
+                                        <a href="#"><i class="fas fa-edit"></i></a>
+                                        |
+                                        @Ajax.ActionLink("|", "Delete", new { @id = item.MaHSX }, new AjaxOptions
+                                   {
+                                       Confirm = "Bạn có muốn xóa bản ghi này?",
+                                       OnComplete = "$('#row_" + @item.MaHSX + "').remove()",
+                                       HttpMethod = "Delete"
+                                   }, new { @class = "myActionLink" })
+                                    </td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <br />
+                    <div class="MenuPage">
+                        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @searchString = ViewBag.SearchString }))
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+    <!-- Sticky Footer -->
+    <footer class="sticky-footer">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright © Your Website 2018</span>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<style>
+    .MenuPage li {
+        margin-left: 1%;
+    }
+</style>

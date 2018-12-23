@@ -26,7 +26,7 @@ namespace WebsiteSalePhones.Areas.Admin.Controllers
                     userSession.UserName = user.UserName;
                     userSession.UserID = user.ID;
 
-                    Session.Add(CommonConstant.USER_SESSION,userSession);
+                    Session.Add(CommonConstant.ADMIN_SESSION, userSession);
                     return RedirectToAction("Index", "Home");
                 }
                 else if (result == 0)

@@ -184,3 +184,191 @@ C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Micro
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\obj\Debug\WebsiteSalePhones.csprojResolveAssemblyReference.cache
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\obj\Debug\WebsiteSalePhones.dll
 C:\Users\to cong hau\Documents\Web\WebsiteSalePhones\WebsiteSalePhones\obj\Debug\WebsiteSalePhones.pdb
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\ApplicationInsights.config
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\csc.exe
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\vbc.exe
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\VBCSCompiler.exe
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\WebsiteSalePhones.dll.config
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\WebsiteSalePhones.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\WebsiteSalePhones.pdb
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Antlr3.Runtime.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\BotDetect.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\BotDetect.Web.Mvc.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Common.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\EntityFramework.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\EntityFramework.SqlServer.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.Web.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.ApplicationInsights.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Model.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Newtonsoft.Json.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Owin.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\PagedList.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\PagedList.Mvc.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Data.SQLite.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Helpers.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Mvc.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Optimization.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Razor.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.Deployment.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.Razor.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\WebGrease.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Common.pdb
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Model.pdb
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.Web.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.ApplicationInsights.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\PagedList.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\PagedList.Mvc.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Data.SQLite.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Helpers.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Mvc.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Optimization.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Razor.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.Deployment.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.Razor.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Antlr3.Runtime.pdb
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Newtonsoft.Json.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\EntityFramework.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\EntityFramework.SqlServer.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\obj\Debug\WebsiteSalePhones.csprojResolveAssemblyReference.cache
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\obj\Debug\WebsiteSalePhones.dll
+C:\Users\to cong hau\Documents\website ban sach\-n-C-ng-ngh-Web\Do an Cong Nghe Web\Web\WebsiteSalePhones\WebsiteSalePhones\obj\Debug\WebsiteSalePhones.pdb
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\ApplicationInsights.config
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\csc.exe
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\vbc.exe
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\VBCSCompiler.exe
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\WebsiteSalePhones.dll.config
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\WebsiteSalePhones.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\WebsiteSalePhones.pdb
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Antlr3.Runtime.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\BotDetect.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\BotDetect.Web.Mvc.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Common.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\EntityFramework.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\EntityFramework.SqlServer.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.Web.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.ApplicationInsights.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Model.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Newtonsoft.Json.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Owin.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\PagedList.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\PagedList.Mvc.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Data.SQLite.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Helpers.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Mvc.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Optimization.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Razor.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.Deployment.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.Razor.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\WebGrease.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Common.pdb
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Model.pdb
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.Web.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.ApplicationInsights.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\PagedList.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\PagedList.Mvc.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Data.SQLite.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Helpers.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Mvc.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Optimization.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.Razor.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.Deployment.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\System.Web.WebPages.Razor.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Antlr3.Runtime.pdb
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Newtonsoft.Json.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\EntityFramework.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\EntityFramework.SqlServer.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\obj\Debug\WebsiteSalePhones.csprojResolveAssemblyReference.cache
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\obj\Debug\WebsiteSalePhones.dll
+C:\Users\to cong hau\Desktop\Web\WebsiteSalePhones\WebsiteSalePhones\obj\Debug\WebsiteSalePhones.pdb

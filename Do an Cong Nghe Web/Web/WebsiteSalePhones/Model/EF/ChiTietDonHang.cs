@@ -1,4 +1,4 @@
-namespace Model.EF
+﻿namespace Model.EF
 {
     using System;
     using System.Collections.Generic;
@@ -17,9 +17,11 @@ namespace Model.EF
         [Key]
         [Column(Order = 1)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Display(Name = "Mã ĐT")]
         public int MaDT { get; set; }
-
+        [Display(Name = "Số lượng")]
         public int? SoLuong { get; set; }
+        [Display(Name = "Đơn giá")]
 
         public decimal? DonGia { get; set; }
 

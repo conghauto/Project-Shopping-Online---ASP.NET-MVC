@@ -11,7 +11,7 @@ namespace WebsiteSalePhones.Areas.Admin.Controllers
     {
         protected override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            var session = (AdminLogin)Session[CommonConstant.USER_SESSION];
+            var session = (AdminLogin)Session[CommonConstant.ADMIN_SESSION];
             if (session == null)
             {
                 filterContext.Result = new RedirectToRouteResult(new System.Web.Routing.RouteValueDictionary(new

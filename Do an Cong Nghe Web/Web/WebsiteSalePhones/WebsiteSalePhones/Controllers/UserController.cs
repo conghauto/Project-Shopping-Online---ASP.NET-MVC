@@ -44,7 +44,7 @@ namespace WebsiteSalePhones.Controllers
                     var userSession = new UserLogin();
                     userSession.UserName = user.TaiKhoan;
                     userSession.UserID = user.MaKH;
-
+                    
                     Session.Add(CommonConstant.USER_SESSION, userSession);
                     return RedirectToAction("Index", "Home");
                 }
@@ -80,10 +80,10 @@ namespace WebsiteSalePhones.Controllers
                 {
                     ModelState.AddModelError("", "Tên đăng nhập đã tồn tại.");
                 }
-                else if (db.KhachHangs.Count(x => x.Email == model.Email) > 0)
-                {
-                    ModelState.AddModelError("", "Email đã tồn tại.");
-                }
+                //else if (db.KhachHangs.Count(x => x.Email == model.Email) > 0)
+                //{
+                //    ModelState.AddModelError("", "Email đã tồn tại.");
+                //}
                 else
                 {
                     var kh = new KhachHang();
@@ -91,12 +91,13 @@ namespace WebsiteSalePhones.Controllers
                     kh.MatKhau = Encryptor.MD5Hash(model.MatKhau);
                     kh.XacNhanMK = Encryptor.MD5Hash(model.XacNhanMK);
                     kh.HoTen = model.HoTen;
-                    kh.Email = model.Email;
-                    kh.DiaChi = model.DiaChi;
-                    kh.DienThoai = model.DienThoai;
+                    //kh.Email = model.Email;
+                    //kh.DiaChi = model.DiaChi;
+                    //kh.DienThoai = model.DienThoai;
                     kh.GioiTinh = model.GioiTinh;
                     kh.NgaySinh = model.NgaySinh;
 
+                    
                     //Insert data in table KhachHang
                     var result=db.KhachHangs.Add(kh);
                     if (result!=null)

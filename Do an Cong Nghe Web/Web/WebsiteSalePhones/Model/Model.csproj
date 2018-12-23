@@ -60,10 +60,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\AdminDao.cs" />
+    <Compile Include="DAO\BillDao.cs" />
+    <Compile Include="DAO\BillDetailDao.cs" />
     <Compile Include="DAO\CategoryDao.cs" />
     <Compile Include="DAO\OrderDao.cs" />
     <Compile Include="DAO\OrderDetailDao.cs" />
     <Compile Include="DAO\PhoneDao.cs" />
+    <Compile Include="DAO\UserDao.cs" />
     <Compile Include="EF\Admin.cs" />
     <Compile Include="EF\ChiTietDonHang.cs" />
     <Compile Include="EF\DienThoai.cs" />
@@ -72,6 +75,7 @@
     <Compile Include="EF\KhachHang.cs" />
     <Compile Include="EF\OnlineShopDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\BillViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
