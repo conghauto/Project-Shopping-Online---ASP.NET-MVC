@@ -1,0 +1,4 @@
+F:\New\WebsiteSalePhones\Common\bin\Release\Common.dll
+F:\New\WebsiteSalePhones\Common\bin\Release\Common.pdb
+F:\New\WebsiteSalePhones\Common\obj\Release\Common.dll
+F:\New\WebsiteSalePhones\Common\obj\Release\Common.pdb

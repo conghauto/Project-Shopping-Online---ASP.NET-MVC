@@ -1,0 +1,13 @@
+F:\New\WebsiteSalePhones\Model\bin\Release\Model.dll.config
+F:\New\WebsiteSalePhones\Model\bin\Release\Model.dll
+F:\New\WebsiteSalePhones\Model\bin\Release\Model.pdb
+F:\New\WebsiteSalePhones\Model\bin\Release\EntityFramework.dll
+F:\New\WebsiteSalePhones\Model\bin\Release\EntityFramework.SqlServer.dll
+F:\New\WebsiteSalePhones\Model\bin\Release\PagedList.dll
+F:\New\WebsiteSalePhones\Model\bin\Release\PagedList.Mvc.dll
+F:\New\WebsiteSalePhones\Model\bin\Release\EntityFramework.xml
+F:\New\WebsiteSalePhones\Model\bin\Release\EntityFramework.SqlServer.xml
+F:\New\WebsiteSalePhones\Model\bin\Release\PagedList.xml
+F:\New\WebsiteSalePhones\Model\bin\Release\PagedList.Mvc.xml
+F:\New\WebsiteSalePhones\Model\obj\Release\Model.dll
+F:\New\WebsiteSalePhones\Model\obj\Release\Model.pdb
